@@ -9,6 +9,14 @@
 
 def multiplication_chain(num):
     # Здесь нужно написать код
+    count_multy = 0
+    while num > 9:
+        mult = 1
+        count_multy += 1
+        while num != 0:
+            mult = mult * (num % 10)
+            num = num // 10
+        num = mult
     return count_multy
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
