@@ -4,6 +4,10 @@
 
 def move_zeros(lst):
     # Здесь нужно написать код
+    res = [item for item in lst if item != 0]
+    zer = len(lst) - len(res)
+    res.extend([0] * zer)
+    lst = res
     return lst
 
 # Ниже НИЧЕГО НЕ НАДО ИЗМЕНЯТЬ
